@@ -1,0 +1,157 @@
+╔══════════════════════════════════════════════════════════════╗
+║     🔥 FIREBASE DEPLOYMENT - STEP BY STEP GUIDE 🔥          ║
+╚══════════════════════════════════════════════════════════════╝
+
+✅ SETUP COMPLETE:
+   - Firebase CLI installed
+   - Logged in as: yashikarawat0801@gmail.com
+   - Build completed (dist folder ready)
+   - firebase.json configured
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📋 STEP 1: CREATE FIREBASE PROJECT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Open your browser and go to:
+   👉 https://console.firebase.google.com/
+
+2. Click: "Add project" (or "Create a project")
+
+3. Enter project name:
+   👉 neurovistaai
+   (or any name you prefer - lowercase, no spaces)
+
+4. IMPORTANT: Disable Google Analytics
+   ❌ Turn OFF "Enable Google Analytics for this project"
+
+5. Click: "Create project"
+
+6. Wait 30 seconds (Firebase sets up your project)
+
+7. Click: "Continue"
+
+8. You'll see your Firebase Console dashboard
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📋 STEP 2: LINK YOUR PROJECT (Run in Terminal)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Open your terminal in VS Code and run:
+
+    firebase use --add
+
+What happens:
+  - You'll see a list of your Firebase projects
+  - Use arrow keys to select "neurovistaai" (or your project name)
+  - Press Enter
+  - When asked for an alias, just press Enter (uses "default")
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📋 STEP 3: DEPLOY! 🚀 (Run in Terminal)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Option A - Simple deploy:
+
+    firebase deploy
+
+
+Option B - Using the shortcut script:
+
+    npm run deploy
+
+
+What happens:
+  - Firebase uploads your dist folder
+  - Your site goes live in ~30 seconds
+  - You'll get your live URLs
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🌐 YOUR LIVE URLS (After Deploy)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Primary URL:
+👉 https://neurovistaai.web.app
+
+Alternative URL:
+👉 https://neurovistaai.firebaseapp.com
+
+(Replace "neurovistaai" with your actual project name)
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔄 UPDATE YOUR SITE (Future Changes)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Whenever you make code changes:
+
+1. Build:
+    npm run build
+
+2. Deploy:
+    firebase deploy
+
+Or use the shortcut (does both):
+    npm run deploy
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 HELPFUL COMMANDS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+View your projects:
+    firebase projects:list
+
+Switch project:
+    firebase use --add
+
+Deploy only hosting (faster):
+    firebase deploy --only hosting
+
+View deployment history:
+    firebase hosting:sites:list
+
+Open your live site:
+    firebase open hosting:site
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚠️ TROUBLESHOOTING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Problem: "No project active"
+Solution:
+    firebase use --add
+
+Problem: "dist folder not found"
+Solution:
+    npm run build
+
+Problem: "Permission denied"
+Solution:
+    firebase login --reauth
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎉 THAT'S IT!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Your NeuroVistaAI website will be:
+✅ Live on the internet
+✅ Secured with HTTPS
+✅ Hosted on Google's fast CDN
+✅ Free forever (generous free tier)
+
+Start with Step 1 above! 🚀
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
